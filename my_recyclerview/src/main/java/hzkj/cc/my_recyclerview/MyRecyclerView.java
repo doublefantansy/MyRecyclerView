@@ -80,7 +80,6 @@ public class MyRecyclerView extends LinearLayout {
     public void loadMoreFail() {
         adapter.changeMoreStatus(SuperAdapter.FAIL);
         recyclerView.scrollToPosition(lastVisibleItem - 1);
-//        adapter.refresh();
     }
 
     private void initLoadMoreListener() {
